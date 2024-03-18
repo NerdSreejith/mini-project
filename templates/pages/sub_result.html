@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Subdomain Scan Result</h1>
+<p>URL: {{ url }}</p>
+<p>Subdomains:</p>
+<ul>
+    {% for subdomain in subdomains %}
+        <li>{{ subdomain }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

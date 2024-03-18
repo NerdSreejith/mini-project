@@ -1,0 +1,93 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block breadcrumbs %}
+  <!-- Breadcrumb code goes here if needed -->
+{% endblock breadcrumbs %}
+
+{% block content %}
+  <!-- Main Content -->
+  <div class="mt-3">
+    <h2 style="color: #007bff; font-weight: bold;">Improve Your Web Application Security with WeSecure</h2>
+    <p>WeSecure is not just a web vulnerability scanner. It is a comprehensive web application security testing solution that can be used standalone or as part of complex environments. It offers built-in vulnerability assessment and management, along with seamless integration options with leading software development tools.</p>
+    <p>By incorporating WeSecure into your security measures, you can significantly enhance your cybersecurity stance and mitigate numerous security risks efficiently.</p>
+    <!-- WeSecure integration button -->
+    <div class="text-center">
+      <a href="#nmap" class="btn btn-primary" >Secure Your Web App Now</a>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <!-- Section 1: Nmap Scanning -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title " id="n" style="color: #28a745;">Nmap Scanning</h5>
+          <p class="card-text">Nmap is a powerful network scanning tool used for port scanning, service version detection, and vulnerability scanning. Learn how to use Nmap for website vulnerability assessment.</p>
+          <a href="{% url 'basic_scan' %}" class="btn btn-success">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <!-- Section 2: Vulnerability Scanning -->
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" style="color: #dc3545;">Vulnerability Scanning</h5>
+          <p class="card-text">Vulnerability scanning involves scanning a website or network for security weaknesses, misconfigurations, and vulnerabilities. Explore vulnerability scanning techniques and tools to identify and mitigate security risks.</p>
+          <a href="#" class="btn btn-danger">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subdomain Feature -->
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #ffc107;">Subdomain Enumeration</h5>
+      <p class="card-text">Subdomain enumeration is the process of discovering subdomains associated with a website. Discovering subdomains can help expand your attack surface and enhance security awareness.</p>
+      <a href="#" class="btn btn-warning">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Website Security Insights -->
+  <div class="mt-3">
+    <h2 style="color: #6c757d;">Website Security Insights</h2>
+    <p>Did you know?</p>
+    <ul>
+      <li>Over 60% of data breaches involve vulnerabilities for which a patch was available but not applied.</li>
+      <li>SQL injection and cross-site scripting (XSS) are among the most common vulnerabilities found in web applications.</li>
+      <li>Regularly updating software and applying security patches can significantly reduce the risk of cyberattacks.</li>
+      <li>Implementing strong authentication mechanisms, such as multi-factor authentication, can prevent unauthorized access to your website.</li>
+    </ul>
+    <p>Stay informed about the latest security threats and best practices to protect your website and users' data.</p>
+  </div>
+  
+  <!-- New Vulnerabilities Section -->
+  <div class="mt-3">
+    <h3>New Vulnerabilities</h3>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://portswigger.net/web-security/llm-attacks/images/llm_image1.png" class="img-fluid rounded-start" alt="LLM Attack">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-info">LLM ATTACK</h5>
+            <p class="card-text">LLM (Look-Listen-Modify) attacks are a type of web attack aimed at exploiting web server vulnerabilities. Learn more about LLM attacks and how to defend against them.</p>
+            <a href="https://portswigger.net/web-security/llm-attacks" class="btn btn-info">Read more..</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Resources Section -->
+  <div class="mt-3">
+    <h3>Additional Resources</h3>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">Guide to Secure Coding Practices</a>
+      <a href="#" class="list-group-item list-group-item-action">Web Application Firewall (WAF) Basics</a>
+      <a href="#" class="list-group-item list-group-item-action">Security Headers Implementation Guide</a>
+    </div>
+  </div>
+
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Website Scan Result</h1>
+<p>URL: {{ url }}</p>
+<p>IP Address: {{ ip_address }}</p>
+<p>Open Ports:</p>
+<ul>
+    {% for port_info in open_ports %}
+        <li>Port: {{ port_info.port }} | Service: {{ port_info.service }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
